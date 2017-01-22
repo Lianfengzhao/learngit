@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>图鉴</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="head">
+		<img src="photo/header_2.jpg" style="width:100%">
+	</div>
+
+	<div class="content" >
+	
+		<div class="menu">
+			<li style="background-color:#ffcc66" alt="fire">火系</li>
+			<li style="background-color:#66ccff" alt="water">水系</li>
+			<li style="background-color:#33ffcc" alt="grass">草系</li>
+			<li style="background-color:#ffff33" alt="elc">电系</li>
+		</div>
+
+
+		<div class="content2">
+			<div alt="fire" style="display:none">
+				<div class="img">
+					<img src="photo/fire_1.jpg">
+					<p class="desc">小火龙</p>
+				</div>
+				<button onclick="add_content ('fire')" alt="fire" class="bt">添加</button>
+			</div>
+			<div alt="water" style="display:none">
+				<div class="img">
+					<img src="photo/water_1.jpg">
+					<p class="desc">水精灵</p>
+				</div>
+				<button onclick="add_content ('water')" alt="water" class="bt">添加</button>
+			</div>
+			<div alt="grass" style="display:none">
+				<div class="img">
+					<img src="photo/grass_1.jpg">
+					<p class="desc">妙蛙草</p>
+				</div>
+				<button onclick="add_content ('grass')" alt="grass" class="bt">添加</button>
+			</div>
+			<div alt="elc" style="display:none">
+				<div class="img">
+					<img src="photo/elc_1.jpg">
+					<p class="desc">皮卡丘</p>
+				</div>
+				<button onclick="add_content ('elc')" alt="elc" class="bt">添加</button>
+			</div>
+		</div>
+
+
+		<div class="detail">
+			
+		</div>
+	</div>
+	<script src="jquery-3.1.1.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>>
