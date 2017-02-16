@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>关于我们</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+	<script src="../jq.js"></script>
+	<script src="../bootstrap.js"></script>
+	<link rel="stylesheet" href="../main.css">
+</head>
+<body onload="if_load()">
+<div class="container">
+	<div class="row" style="margin-top:10px;background-image:url('../photo/bg.png');background-size:cover">
+		<div class="col-md-2">
+			<img src="../photo/logo.png" alt="logo" style="width:30px,height:30px">
+		</div>
+		<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-10">
+					<h2 class="center-block" style="color:white">竞赛信息网</h2>
+				</div>
+			</div>
+			<div class="row" style="margin-top:20px">
+				<div class="col-md-2">
+					<img src="../photo/search.png" style="height:40px" class="pull-right">
+				</div>
+				<div class="col-md-3">					
+					<input type="text" placeholder="关键词搜索" class="form-control" style="height:40px">
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-3">
+					<a href="user_center.html" style="color:white;display:none" id="show_username">六个字符的名</a>
+					<button class="btn btn-primary btn-sm" style="color:white;background-color:#002060;display:none" id="unload_bt" onclick="unload()">退出登录</button>
+					<a href="load.html"><button class="btn btn-primary btn-lg" style="color:white;background-color:#002060" id="load_bt">登录</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<a href="index.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:13.7%">首页</button></a>
+		<a href="compete.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">竞赛信息</button></a>
+		<a href="team.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">队友匹配</button></a>
+		<a href="share.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">资料共享</button></a>
+		<a href="show.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">成果展示</button></a>
+		<a href="talk.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">交流讨论</button></a>
+		<a href="about_us.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">关于我们</button></a>
+	</div>
+</div>
+
+<div style="text-align:center;margin-top:60px">
+	<p>QQ群：</p>
+	<p>联系邮箱：gameforu@yeah.net</p>
+	<p>微信公众号：G4U</p>
+	<p style="color:#843C0B;margin-top:40px">欢迎联系我们~</p>
+	<p style="color:#843C0B;margin-bottom:40px">有任何意见/疑问也可以联系我们~</p>
+	<hr><br>
+	<strong>设计：</strong>
+	<p>周蕾、田君、谢明家</p><br>
+	<strong>常务组：</strong>
+	<p>宁一舟、章涛</p><br>
+	<strong>前端触：</strong>
+	<p>凤爪</p><br>
+	<strong>后端组：</strong>
+	<p>吴迪、刘翼飞</p><br>
+	<p style="color:#843C0B">欢迎加入我们</p>
+	<p style="color:#843C0B">( ＾∀＾）／欢迎＼( ＾∀＾）</p>
+</div>
+
+<div class="container" style="background-color:#9cf;margin-top:20px">
+	<div class="row" style="margin-top:5px">
+		<div class="col-md-1"></div>
+		<div class="col-md-1">
+			<a href="talk.html">
+			<img src="../photo/talk.png" style="height:50px">
+			<p style="margin-left:7px;color:black" >交流讨论</p></a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-1">
+			<a href="team.html">
+			<img src="../photo/team.png" style="height:50px">
+			<p style="margin-left:7px;color:black">队友匹配</p></a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-1">
+			<a href="show.html">
+			<img src="../photo/show.png" style="height:50px">
+			<p style="margin-left:7px;color:black">成果展示</p></a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-1">
+			<a href="share.html">
+			<img src="../photo/share.png" style="height:50px">
+			<p style="margin-left:7px;color:black">资料共享</p></a>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+<script src="../jquery-3.1.1.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>

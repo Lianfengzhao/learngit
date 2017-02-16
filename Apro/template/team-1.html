@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>寻找队伍</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+	<script src="../jq.js"></script>
+	<script src="../bootstrap.js"></script>
+	<link rel="stylesheet" href="../main.css">
+</head>
+<body onload="if_load()">
+<div class="container">
+	<div class="row" style="margin-top:10px;background-image:url('../photo/bg.png');background-size:cover">
+		<div class="col-md-2">
+			<img src="../photo/logo.png" alt="logo" style="width:30px,height:30px">
+		</div>
+		<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-10">
+					<h2 class="center-block" style="color:white">竞赛信息网</h2>
+				</div>
+			</div>
+			<div class="row" style="margin-top:20px">
+				<div class="col-md-2">
+					<img src="../photo/search.png" style="height:40px" class="pull-right">
+				</div>
+				<div class="col-md-3">					
+					<input type="text" placeholder="关键词搜索" class="form-control" style="height:40px">
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-3">
+					<a href="user_center.html" style="color:white;display:none" id="show_username">六个字符的名</a>
+					<button class="btn btn-primary btn-sm" style="color:white;background-color:#002060;display:none" id="unload_bt" onclick="unload()">退出登录</button>
+					<a href="load.html"><button class="btn btn-primary btn-lg" style="color:white;background-color:#002060" id="load_bt">登录</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<a href="index.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:13.7%">首页</button></a>
+		<a href="compete.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">竞赛信息</button></a>
+		<a href="team.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">队友匹配</button></a>
+		<a href="share.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">资料共享</button></a>
+		<a href="show.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">成果展示</button></a>
+		<a href="talk.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">交流讨论</button></a>
+		<a href="about_us.html"><button class="btn btn-default" style="color:white;background-color:#002060;width:14%">关于我们</button></a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<img src="../photo/header.png" style="width:100%;height:130px">
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px">
+		<div class="col-md-1"></div>
+		<div class="col-md-3">
+			<a href="team-2.html"><img src="../photo/search_partner_2.png" onclick="" style="cursor: pointer"></a>
+		</div>
+		<div class="col-md-7">
+			<input type="text" placeholder="关键词搜索" class="form-control" style="height:40px">
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row" style="margin-top:20px">
+		<div class="col-md-1"></div>
+		<div class="col-md-4">
+			<div class="btn-group">
+    			<button type="button" class="btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown" style="width:100%">筛选：比赛<span class="caret"></span></button>
+    			<ul class="dropdown-menu" role="menu">
+        			<li><a href="#">英语类</a></li>
+					<li><a href="#">创新创业类</a></li>
+					<li><a href="#">建模类</a></li>
+					<li><a href="#">计算机类</a></li>
+					<li><a href="#">其他专业类</a></li>
+    			</ul>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-6">
+			<div class="btn-group">
+    			<button type="button" class="btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown" style="width:100%">筛选：人数<span class="caret"></span></button>
+    			<ul class="dropdown-menu" role="menu">
+        			<li><a href="#">1人</a></li>
+					<li><a href="#">2-5人</a></li>
+					<li><a href="#">6-7人</a></li>
+    			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<ul class="list-group">
+    			<li class="list-group-item" data-toggle="modal" data-target="#search_team">免费域名注册</li>
+    			<li class="list-group-item">免费 Window 空间托管</li>
+    			<li class="list-group-item">图像的数量</li>
+    			<li class="list-group-item">24*7 支持</li>
+    			<li class="list-group-item">每年更新成本</li>
+			</ul>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+
+<div class="modal fade" id="search_team" tabindex="-1" role="dialog" aria-hidden="true"  data-backdrop="static">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div style="text-align:center">
+					<h4 class="modal-title">用户自定义资料标题</h4>
+					<span>上传者：</span><span></span>
+					<span>下载量：</span><span></span>
+				</div>
+			</div>
+			<div class="modal-body">
+				<p style="text-align:center">——招募信息———</p>
+				<p>比赛名称：<span></span></p>
+				<p>报名时间：<span></span></p>
+				<p>招募剩余：<span></span></p>
+				<p>队伍介绍：<span></span></p>
+			</div>
+			<div class="modal-body">
+				<p style="text-align:center">——队长信息———</p>
+				<p>学院：<span></span></p>
+				<p>专业：<span></span></p>
+				<p>年级：<span></span></p>
+				<p>擅长：<span></span></p>
+				<p>联系方式：<span></span></p>
+			</div>
+			<div class="modal-body">
+				<p style="text-align:center">——招募要求———</p>
+				<p>学院：<span></span></p>
+				<p>年级：<span></span></p>
+				<p>要求：<span></span></p>
+			</div>
+			<div class="modal-footer" style="text-align:center">
+                <h4 style="color:#5B9BD5" >祝合作愉快，比赛顺利</h4>
+                <span class="glyphicon glyphicon-heart"></span>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container" style="background-color:#9cf">
+	<div class="row" style="margin-top:5px">
+		<div class="col-md-1"></div>
+		<div class="col-md-1">
+			<a href="talk.html">
+			<img src="../photo/talk.png" style="height:50px">
+			<p style="margin-left:7px;color:black" >交流讨论</p></a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-1">
+			<a href="team.html">
+			<img src="../photo/team.png" style="height:50px">
+			<p style="margin-left:7px;color:black">队友匹配</p></a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-1">
+			<a href="show.html">
+			<img src="../photo/show.png" style="height:50px">
+			<p style="margin-left:7px;color:black">成果展示</p></a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-1">
+			<a href="share.html">
+			<img src="../photo/share.png" style="height:50px">
+			<p style="margin-left:7px;color:black">资料共享</p></a>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+<script src="../jquery-3.1.1.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>

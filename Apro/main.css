@@ -1,0 +1,20 @@
+.center_ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.center_ul>a{
+	display:block;
+	font-weight:bold;
+	color: #000;
+	background-color:#8EAADC;
+	width:120px;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.title_font{
+	font-weight: bold;
+	font-size: 18px;
+}
